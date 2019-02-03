@@ -4,10 +4,27 @@
 
 @import "minima";
 
+# Flip title with nav.
 .site-title {
   float: right;
 }
 
 .site-nav {
   float: left;
+
+  # Fix burger menu on mobile.
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 9px;
+    left: $spacing-unit / 2;
+    right: auto;
+
+    label[for="nav-trigger"] {
+      float: left;
+    }
+
+    .menu-icon {
+      float: left;
+    }
+  }
 }
