@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Karol S. Mazur's Blog
+title: blog.mazur.me
 author: Karol S. Mazur
 description: >-
-  This is Karol S. Mazur's blog. It's mostly about iOS software development.
+  Karol S. Mazur's blog about iOS software development.
 baseurl: "" # subpath, e.g. /blog
 url: "https://blog.mazur.me"
 twitter_username: karolsmazur
