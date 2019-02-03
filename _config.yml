@@ -22,6 +22,7 @@ url: "https://blog.mazur.me"
 twitter_username: karolsmazur
 github_username:  ksm
 show_excerpts: true
+permalink: /:categories/:title/
 
 # Build settings
 markdown: kramdown
