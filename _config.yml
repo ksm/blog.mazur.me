@@ -21,6 +21,7 @@ baseurl: "" # subpath, e.g. /blog
 url: "https://blog.mazur.me"
 twitter_username: karolsmazur
 github_username:  ksm
+show_excerpts: true
 
 # Build settings
 markdown: kramdown
