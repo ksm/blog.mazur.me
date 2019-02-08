@@ -23,3 +23,7 @@ The above pattern is a distant relative of Lightweight Architectural Decisions. 
 
 - [Lightweight Architecture Decision Records](https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records)
 - [Documenting Architecture Decisions](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions)
+
+**Feb 7, 2019 update**: Artsy has their dependency process documented and out in the open. It's a great read. Of note is how the team at Artsy decides whether a dependency should go through the Artsy RFC process. Thank you to [Orta Therox](https://twitter.com/orta) for bringing this to my attention.
+
+- [Adding a Dependency Playbook](https://github.com/artsy/README/blob/master/playbooks/dependencies.md)
