@@ -15,16 +15,18 @@ Initially I wasn't sure what the source of my Playgrounds problem was, so I made
 
 I knew Playgrounds were missing some symbols, and I knew this was Carthage related. It became clear that Carthage supplied dependencies weren't being seen by Playgrounds. What wasn't so obvious to me is how to fix this issue in a way that wouldn't require any kind of Xcode project restructuring.
 
-I reached out to the iOS community with the sample project that reproduced the problem, and it turned out that [Logan Moseley](https://github.com/loganmoseley) was having the same problem. Within a day Logan figured out the simple fix I was searching for. Thank you Logan! Here are the steps:
+I reached out to the iOS community with the sample project that reproduced the problem, and it turned out that [Logan Moseley](https://github.com/loganmoseley) was having the same problem. Within a day Logan figured out the [simple fix](/assets/2019-02-09-playground-driven-development-and-carthage-logan-fix.png) I was searching for. Thank you Logan! Here are the steps:
 
-1. Select Xcode → Project Settings → Targets → YourAppsFramework target
+1. Select Xcode → Project Settings → Targets → your main AppFramework target
 2. Click on the Build Phases tab
 3. Add a Copy Files phase
 4. Select Products Directory as the Destination
 5. Drag all Carthage-supplied frameworks in from the project navigator's frameworks group
 6. Clean and re-build the project, open the project playground and start playing
 
-Or better yet, have a look at [an image of the fix](/assets/2019-02-09-playground-driven-development-and-carthage-logan-fix.png) that Logan made.
+Here's how the new Copy Files phase should look:
+
+![Screenshot of Xcode project target settings that fix the Carthage Playground Driven Development issue](/assets/2019-02-09-playground-driven-development-and-carthage-003.png)
 
 We're done. Playground Driven Development with Xcode and Carthage should now work. 💫
 
