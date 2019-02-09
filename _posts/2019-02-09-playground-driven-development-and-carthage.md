@@ -22,7 +22,7 @@ I reached out to the iOS community with the sample project that reproduced the p
 3. Add a Copy Files phase
 4. Select Products Directory as the Destination
 5. Drag all Carthage-supplied frameworks in from the project navigator's frameworks group
-6. Clean and re-build the project, open Playgrounds and enjoy Playground Driven Development
+6. Clean and re-build the project, open the project playground and start playing
 
 Or better yet, have a look at [an image of the fix](/assets/2019-02-09-playground-driven-development-and-carthage-logan-fix.png) that Logan made.
 
