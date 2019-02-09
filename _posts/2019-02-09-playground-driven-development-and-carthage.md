@@ -17,7 +17,7 @@ I knew Playgrounds were missing some symbols, and I knew this was Carthage relat
 
 I reached out to the iOS community with the sample project that reproduced the problem, and it turned out that [Logan Moseley](https://github.com/loganmoseley) was having the same problem. Within a day Logan figured out the simple fix I was searching for. Thank you Logan! Here are the steps:
 
-1. Select Xcode → Project Settings → Targets → Your Main Target
+1. Select Xcode → Project Settings → Targets → YourAppsFramework target
 2. Click on the Build Phases tab
 3. Add a Copy Files phase
 4. Select Products Directory as the Destination
