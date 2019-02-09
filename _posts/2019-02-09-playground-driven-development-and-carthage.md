@@ -11,17 +11,17 @@ Initially I wasn't sure what the source of my Playgrounds problem was, so I made
 
 ![Screenshot of Xcode Playgrounds with the couldn't lookup symbols error](/assets/2019-02-09-playground-driven-development-and-carthage-001.png)
 
-## Fixing the couldn't look up symbols issue
+## Fixing the *couldn't look up symbols* issue
 
 I knew Playgrounds were missing some symbols, and I knew this was Carthage related. It became clear that Carthage supplied dependencies weren't being seen by Playgrounds. What wasn't so obvious to me is how to fix this issue in a way that wouldn't require any kind of Xcode project restructuring.
 
 I reached out to the iOS community with the sample project that reproduced the problem, and it turned out that [Logan Moseley](https://github.com/loganmoseley) was having the same problem. Within a day Logan figured out the simple fix I was searching for. Thank you Logan! Here are the steps:
 
-1. Go to Xcode project settings Targets
+1. Select Xcode → Project Settings → Targets → Your Main Target
 2. Click on the Build Phases tab
 3. Add a Copy Files phase
 4. Select Products Directory as the Destination
-5. Drag SwiftMessages.framework in from the project navigator's frameworks group
+5. Drag all Carthage-supplied frameworks in from the project navigator's frameworks group
 6. Clean and re-build the project, open Playgrounds and enjoy Playground Driven Development
 
 Or better yet, have a look at [an image of the fix](/assets/2019-02-09-playground-driven-development-and-carthage-logan-fix.png) that Logan made.
