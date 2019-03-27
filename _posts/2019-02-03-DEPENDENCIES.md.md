@@ -27,3 +27,9 @@ The above pattern is a distant relative of Lightweight Architectural Decisions. 
 **Feb 7, 2019 update**: Artsy has their dependency process documented and out in the open. It's a great read. Of note is how the team at Artsy decides whether a dependency should go through the Artsy RFC process. Thank you to [Orta Therox](https://twitter.com/orta) for bringing this to my attention.
 
 - [Adding a Dependency Playbook](https://github.com/artsy/README/blob/master/playbooks/dependencies.md)
+
+**Feb 12, 2019 update**: This post got [featured](https://twitter.com/iOSDevWeekly/status/1095397358433640453) in a [few](https://twitter.com/seanallen_dev/status/1095002921253593088) [places](https://twitter.com/swiftdevmnts/status/1096490331934216192). Thank you!
+
+- [iOS Dev Weekly #390](https://iosdevweekly.com/issues/390#1O9CXcY)
+- [Swift News #45](https://youtu.be/g99P3baA1s0)
+- [Swift Developments #170](https://andybargh.com/swiftdevelopments-170/)
