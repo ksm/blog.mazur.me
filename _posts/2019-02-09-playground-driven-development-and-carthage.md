@@ -32,8 +32,6 @@ We're done. Playground Driven Development with Xcode and Carthage should now wor
 
 ![Screenshot of Xcode Playgrounds working with Carthage after applying the fix](/assets/2019-02-09-playground-driven-development-and-carthage-002.png)
 
-I'm currently writing another blog post on how Playground Driven Development improves your development experience and codebase. Stay tuned.
-
 [^1]: The [master](https://github.com/ksm/Habits/tree/master) branch has a self-contained Xcode project with working PDD. The [carthage](https://github.com/ksm/Habits/tree/carthage) branch installs Carthage and shows the problem (you still have to run `carthage bootstrap`). The fix is on [carthage-fix](https://github.com/ksm/Habits/tree/carthage-fix).
 
 *[PDD]: Playground Driven Development
