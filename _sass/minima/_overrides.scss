@@ -1,34 +1,90 @@
-// $background-color: red;
-// @import "minima";
-//
-// @media (prefers-color-scheme: light) {
-// .light {
-// $text-color: #111 !default;
-// background-color: blue;
-// $brand-color: #2a7ae2 !default;
-// $grey-color: #828282 !default;
-// $grey-color-light: lighten($grey-color, 40%) !default;
-// $grey-color-dark: darken($grey-color, 25%) !default;
-// @import "minima";
-// @import "minima";
-// }
-// .default {
-//   display: none;
-// }
-// }
-//
-// @media (prefers-color-scheme: dark) {
-// .dark {
-// $text-color: #111 !default;
-// background-color: red;
-// $brand-color: #2a7ae2 !default;
-// $grey-color: #828282 !default;
-// $grey-color-light: lighten($grey-color, 40%) !default;
-// $grey-color-dark: darken($grey-color, 25%) !default;
-// @import "minima";
-// @import "minima";
-// }
-// .default {
-// display: none;
-// }
-// }
+$dm-text-color: #dcdcde !default;
+$dm-background-color: #1e1e1e !default;
+$dm-brand-color: #9cdcff !default;
+
+$dm-grey-color: red !default;
+$dm-grey-color-light: lighten($grey-color, 40%) !default;
+$dm-grey-color-dark: darken($grey-color, 25%) !default;
+
+@media (prefers-color-scheme: dark) {
+  // Base
+  body {
+    color: $dm-text-color;
+    background-color: $dm-background-color;
+  }
+
+  a {
+    color: $dm-brand-color;
+
+    &:visited {
+      color: darken($dm-brand-color, 15%);
+    }
+
+    &:hover {
+      color: $dm-text-color;
+    }
+  }
+
+  blockquote {
+    color: $dm-grey-color;
+    border-left: 4px solid $dm-grey-color-light;
+  }
+
+  pre,
+  code {
+    border: 1px solid $dm-grey-color-light;
+    background-color: #eef;
+  }
+
+  .svg-icon {
+    fill: #{$dm-grey-color};
+  }
+
+  table {
+    color: lighten($dm-text-color, 18%);
+    border: 1px solid $dm-grey-color-light;
+    tr {
+      &:nth-child(even) {
+        background-color: lighten($dm-grey-color-light, 6%);
+      }
+    }
+    th {
+      background-color: lighten($dm-grey-color-light, 3%);
+      border: 1px solid darken($dm-grey-color-light, 4%);
+      border-bottom-color: darken($dm-grey-color-light, 12%);
+    }
+    td {
+      border: 1px solid $dm-grey-color-light;
+    }
+  }
+
+  // Layout
+  .site-header {
+    border-top: 5px solid $dm-grey-color-dark;
+    border-bottom: 1px solid $dm-grey-color-light;
+  }
+
+  .site-title {
+    &,
+    &:visited {
+      color: $dm-grey-color-dark;
+    }
+  }
+
+  .site-nav {
+    .page-link {
+      color: $dm-text-color;
+    }
+
+    @include media-query($on-palm) {
+      background-color: $dm-background-color;
+      border: 1px solid $dm-grey-color-light;
+
+      .menu-icon {
+        > svg {
+          fill: $dm-grey-color-dark;
+        }
+      }
+    }
+  }
+}
